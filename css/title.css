@@ -1,0 +1,16 @@
+#title{
+  font-family: 'Noto Sans KR', sans-serif;
+  width:100%;
+  background-image: url(../img/pomain_sub_visual_bg.jpg);
+  height: 100%;
+}
+.wrap{
+  
+}
+#title .block{
+  display: flex;
+  position: absolute;
+  bottom: 20px;
+  left: 620px;
+  gap: 20px;
+}

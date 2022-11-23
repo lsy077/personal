@@ -1,0 +1,36 @@
+header{
+  width: 1200px;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+h1{
+    
+}
+header>h1 a{
+  font-size: 0;
+  background-image: url(../img/lsy-logo.png);  
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 30px;
+  left: 100px;
+}
+.gnb{
+  display: flex;
+  gap: 20px;
+  font-size: 20px;
+}
+.portfolio{
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  font-size:60px;
+  width: 60px;  
+}
+.jump1{  
+  position: absolute;
+  top: 30px;
+  left: 250px;
+}
