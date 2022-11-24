@@ -5,7 +5,7 @@ header{
 h1{
     
 }
-header>h1 a{
+header .wrap h1 a{
   font-size: 0;
   background-image: url(../img/lsy-logo.png);  
   display: inline-block;
@@ -26,11 +26,58 @@ header>h1 a{
   display: flex;
   flex-direction: column;
   gap: 25px;
-  font-size:60px;
+  font-size:100px;
   width: 60px;  
+  position: relative;
+  position: absolute;
+  font-weight: bold;
+  left: 130px;
+  top: 50px;
 }
 .jump1{  
   position: absolute;
   top: 30px;
   left: 250px;
+  color: yellow;
+}
+.jump2{  
+  position: absolute;
+  left: 365px;
+  top: 150px;
+}
+.jump3{  
+  position: absolute;
+  left: 149px;
+  top: 200px;
+}
+.jump4{
+  position: absolute;
+  left: 333px;
+  top: 290px;
+}
+.jump5{
+  position: absolute;
+  left: 145px;
+  top: 360px;
+  color: yellow;
+}
+.jump6{
+  position: absolute;
+  left: 264px;
+  top: 440px;
+}
+.jump7{
+  position: absolute;
+  left: 171px;
+  top: 529px;
+}
+.jump8{
+  position: absolute;
+  left: 380px;
+  top: 622px;
+}
+.jump9{
+  position: absolute;
+  left: 240px;
+  top: 726px;
 }

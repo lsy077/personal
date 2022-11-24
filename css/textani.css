@@ -19,20 +19,20 @@
        /*! padding: 359px; */
        position: absolute;
        right: 400px;
-       bottom: 200px;
+       bottom: 300px;
        }
         .cube {
-           position: relative;
+          position: relative;
            width: 700px;
            height: 300px;
            transform-style: preserve-3d;
            display: flex;
            align-items: center;
-           gap: 20px;
-           font-size: 50px;
+           gap: 40px;
+           font-size: 100px;
            animation: cube 2.7s 1.7s 1;
            justify-content: center;
-           padding-left: 351px;
+           padding-left: 347px;
            font-weight: bold;
         }
 /* @keyframes cube{

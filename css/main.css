@@ -1,15 +1,22 @@
 main{
     font-family: 'Noto Sans KR', sans-serif;
     width: 1200px;
-    height: 100%;
     margin: 0 auto;
 }
-/* about me */
+.me{    
+    display: flex;
+    justify-content: space-between;
+}
 #about{
- 
+    height: 100%;
 } 
 h2{
-
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 20px;
+    margin: 0 auto;
 }
 h2 a{    
     margin: 0 auto;
@@ -21,46 +28,186 @@ h2 a{
 }
 #about p{
     display: inline-block;
-    width: 500px;
+    width: 300px;
     height: 300px;
-    font-size: 20px;
-    line-height: 2;
+    font-size: 15px;
+    line-height: 4;
     background-color: #B6A754;
     text-align: center;
-    vertical-align: middle;     
-    z-index: 1;    
-    position:relative;
-    top: 200px;
-    left: 200px;
+    margin: auto;
+    border-radius: 50%;
 }
-#about p::before{
+/* #about p::before{
     content:"";
-   width: 500px;
+    width: 300px;
     height: 300px;
     background-color: #1253a4;
     display: inline-block;
     position: absolute;
-    top: 100px; 
-    left:0px;
+    top: -100px; 
+    left:-71px;
     z-index: 0;
-}
+} */
 #about ul{
-
+    width: 50%;
+    line-height: 2;
 }
 #about ul li{
-
+font-size: 30px;
+color: #b1adad;
 }
-/* skill */
+#about ul li strong{
+    font-size: 15px;
+    color: #333;
+}
+/* ---------------------------------------------skill------------------------------------------------ */
 #skill{
-    background-color: blueviolet;
+    
 }
-#skill ul li{
-
+#skill .icon ul {    
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+}
+#skill .icon ul li{
+    display: block;
+    width: 200px;
+    height:200px;    
+    background-image: url(../img/html-icon.png);
+    font-size: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+#skill .icon ul li:nth-child(1){
+     background-image: url(../img/html-icon.png);
+}
+#skill .icon ul li:nth-child(2){
+     background-image: url(../img/css-icon.png);
+     background-size: 104%;
+}
+#skill .icon ul li:nth-child(3){
+     background-image: url(../img/zenCoding-icon.png);
+     background-size: 90%;
+}
+#skill .icon ul li:nth-child(4){
+     background-image: url(../img/javascript-icon.svg);
+}
+#skill .wrap2{
+    background-color: #efefef;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#skill .school{
+    
 }
 #skill h3{
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    line-height: 2;
+}
+#skill .wrap2 p{  
 
 }
-#skill p{
+#skill .wrap2 ul{  
 
 }
-/* portfolio */
+#skill .wrap2 ul li{
+    line-height: 1.5;
+}
+#skill .school p{
+    line-height: 1.5;
+}
+#skill .hc{
+    
+}
+#skill .hc h3{
+
+}
+#skill .hc ul{
+
+}
+#skill .hc ul li{
+
+}
+#skill .js{
+    
+}
+#skill .js h3{
+
+}
+#skill .js ul{
+
+}
+#skill .js ul li{
+
+}
+
+/* =============================portfolio=================================== */
+#portfolio{
+
+}
+.contents{    
+    column-count: 2;
+    column-gap: 50px;
+    padding: 20px;
+}
+.bottom{
+
+}
+.wrap3{
+
+}
+figure{
+    display: inline-block;
+    position: relative;
+    padding-bottom: 20px;
+}
+#portfolio figure::before{
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgba(0,0,0,0.7);
+  opacity: 0;
+  transition: all 0.5s;
+  position: absolute;
+}
+#portfolio figure:hover::before{
+  opacity: 1;
+}
+#portfolio figure figcaption{
+    /*! position: absolute; */
+    /*! display: inline-block; */
+    /*! box-sizing: border-box; */
+    /*! text-align: center; */
+}
+img{    
+    width: 550px;
+    height: 300px;
+    box-sizing: border-box;
+}
+dl{
+  /*! position: absolute; */
+  /*! z-index: 2; */
+  /*! display: flex; */
+        
+  /*! flex-direction: column; */
+  /*! justify-content: center; */
+  /*! align-items: center; */
+  /*! top: 0; */
+}
+dt{
+
+}
+dd{
+
+}
+
+

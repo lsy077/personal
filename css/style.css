@@ -5,13 +5,15 @@ body{
 }
 .aside{
     width: 90px;
-    background-color: #d3cfcf;
+    background-color: #d3cfcf00;
     position: fixed;
     right: -100px;
     top: 100px;
     padding: 10px;
     box-sizing: border-box;
     transition: all 1s;
+    top: 50px;
+    color: white;
 }
 .asideShow{
     right:0;
@@ -20,9 +22,11 @@ body{
     position: absolute;
     left: -103px;
     box-sizing: border-box;
-    top: -67px;
     padding: 20px 20px;
     color: white;
+    background-image: url(../img/menu_open_white.png);
+    background-repeat: no-repeat;
+    font-size: 0;
 }
 .aside ul{
     line-height: 2;
@@ -32,6 +36,7 @@ body{
 }
 .aside ul li a{    
     display: block;
+    color: white;
 }
 header ul.gnb{
     display: flex;
