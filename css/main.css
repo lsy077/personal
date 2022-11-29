@@ -1,42 +1,79 @@
-main{
+main {
     font-family: 'Noto Sans KR', sans-serif;
     width: 1200px;
     margin: 0 auto;
 }
-.me{    
+
+.me {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+    padding: 100px;
 }
-#about{
-    height: 100%;
-} 
-h2{
+
+#about {
+    font-family: 'Noto Sans KR', sans-serif;
+    height: 898px;
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about .wrap0 {}
+
+h2 {
     display: flex;
     justify-content: center;
     font-size: 30px;
     font-weight: bold;
-    padding: 20px;
-    margin: 0 auto;
 }
-h2 a{    
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    font-size: 30px;
-    font-weight: bold;
-    padding: 20px;
+
+#about h2 {
+    transform-style: preserve-3d;
+    transition: all 1s;
+    perspective: 600px;
+    position: relative;
 }
-#about p{
-    display: inline-block;
-    width: 300px;
-    height: 300px;
-    font-size: 15px;
-    line-height: 4;
-    background-color: #B6A754;
-    text-align: center;
-    margin: auto;
-    border-radius: 50%;
+
+h2 a {
+    transform: rotateZ(270deg);
+    position: absolute;
+    left: 0;
+    top: 290px;
+    font-size: 100px;
+    color: #e4e4e4;
+    z-index: 0;
+    animation-name: about;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2s;
+    display: block;
 }
+
+@keyframes about {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    100 {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+h2 a strong {
+    font-size: 150px;
+}
+
+#about p {
+    font-size: 20px;
+    line-height: 5;
+    z-index: 1;
+}
+
 /* #about p::before{
     content:"";
     width: 300px;
@@ -48,125 +85,230 @@ h2 a{
     left:-71px;
     z-index: 0;
 } */
-#about ul{
-    width: 50%;
-    line-height: 2;
+#about ul {
+    width: 60%;
+    line-height: 3;
 }
-#about ul li{
-font-size: 30px;
-color: #b1adad;
+
+#about ul li {
+    font-size: 40px;
+    color: #b1adad;
+    font-weight: bold;
+    animation-name: school;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    display: block;
+    animation-delay: 2s;
 }
-#about ul li strong{
-    font-size: 15px;
+
+@keyframes school {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    100 {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+#about ul li strong {
+    font-size: 20px;
     color: #333;
 }
+
 /* ---------------------------------------------skill------------------------------------------------ */
-#skill{
-    
+#skill {
+    font-family: 'Noto Sans KR', sans-serif;
+    height: 800px;
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border: 1px solid #ddd;
 }
-#skill .icon ul {    
+
+#top_light {
+    position: absolute;
+    top: 0;
+    right: 400px;
+}
+
+#skill h2 {
+    margin-bottom: 150px;
+    margin-top: 30px;
+}
+
+#skill .icon {
+    padding-bottom: 100px;
+}
+
+#skill .icon ul {
     display: flex;
     justify-content: space-between;
-    margin: 30px;
+    width: 100%;
+    gap: 80px;
 }
-#skill .icon ul li{
+
+#skill .icon ul li {
     display: block;
     width: 200px;
-    height:200px;    
-    background-image: url(../img/html-icon.png);
+    height: 200px;
     font-size: 0;
     background-size: contain;
     background-repeat: no-repeat;
     margin: 0 auto;
 }
-#skill .icon ul li:nth-child(1){
-     background-image: url(../img/html-icon.png);
+
+#skill .icon ul li:nth-child(1) {
+    background-image: url(../img/html-icon.png);
 }
-#skill .icon ul li:nth-child(2){
-     background-image: url(../img/css-icon.png);
-     background-size: 104%;
+
+#skill .icon ul li:nth-child(2) {
+    background-image: url(../img/css-icon.png);
+    background-size: 104%;
 }
-#skill .icon ul li:nth-child(3){
-     background-image: url(../img/zenCoding-icon.png);
-     background-size: 90%;
+
+#skill .icon ul li:nth-child(3) {
+    background-image: url(../img/zenCoding-icon.png);
+    background-size: 90%;
 }
-#skill .icon ul li:nth-child(4){
-     background-image: url(../img/javascript-icon.svg);
+
+#skill .icon ul li:nth-child(4) {
+    background-image: url(../img/javascript-icon.svg);
 }
-#skill .wrap2{
-    background-color: #efefef;
+
+#skill .wrap2 {
+    background-color: #f5f5f5;
     display: flex;
     justify-content: space-around;
     padding-top: 20px;
     padding-bottom: 20px;
 }
-#skill .school{
-    
-}
-#skill h3{
+
+#skill .school {}
+
+#skill h3 {
     display: flex;
     justify-content: center;
-    font-size: 15px;
+    font-size: 20px;
     line-height: 2;
+    font-weight: bold;
 }
-#skill .wrap2 p{  
 
-}
-#skill .wrap2 ul{  
+#skill .wrap2 p {}
 
-}
-#skill .wrap2 ul li{
+#skill .wrap2 ul {}
+
+#skill .wrap2 ul li {
     line-height: 1.5;
 }
-#skill .school p{
+
+#skill .school p {
     line-height: 1.5;
 }
-#skill .hc{
-    
-}
-#skill .hc h3{
 
-}
-#skill .hc ul{
+#skill .hc {}
 
-}
-#skill .hc ul li{
+#skill .hc h3 {}
 
-}
-#skill .js{
-    
-}
-#skill .js h3{
+#skill .hc ul {}
 
-}
-#skill .js ul{
+#skill .hc ul li {}
 
-}
-#skill .js ul li{
+#skill .js {}
 
-}
+#skill .js h3 {}
+
+#skill .js ul {}
+
+#skill .js ul li {}
 
 /* =============================portfolio=================================== */
-#portfolio{
-
+#portfolio {
+    font-family: 'Noto Sans KR', sans-serif;
+    height: 1000px;
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.contents{    
+
+.contents {
     column-count: 2;
     column-gap: 50px;
     padding: 20px;
+    position: relative;
 }
-.bottom{
 
+.center {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
-.wrap3{
 
+.center a {
+    color: red;
+    font-size: 15px;
 }
-figure{
+
+.center i {
+    position: absolute;
+    top: 67px;
+    right: 170px;
+    font-size: 30px;
+    color: black;
+    display: block;
+    border: 2px solid #33;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: white;
+    line-height: 1.2;
+}
+
+.center img {
+    border-radius: 0;
+}
+
+.in img {
+    max-width: 100%;
+}
+
+.bottom {}
+
+.wrap3 {
+    position: relative;
+}
+
+.wrap3 h2 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+figure {
     display: inline-block;
     position: relative;
-    padding-bottom: 20px;
+    /*! border: 2px solid #1a1a1a; */
+    border-radius: 20px 20px 20px 20px;
+    box-sizing: border-box;
+    margin-bottom: 40px;
 }
-#portfolio figure::before{
+
+/* #portfolio figure::before{
   content: "";
   width: 100%;
   height: 100%;
@@ -175,39 +317,42 @@ figure{
   left: 0;
   top: 0;
   background-color: rgba(0,0,0,0.7);
-  opacity: 0;
-  transition: all 0.5s;
-  position: absolute;
+/*   opacity: 0; */
+transition: all 0.5s;
+position: absolute;
+box-sizing:border-box;
 }
-#portfolio figure:hover::before{
+
+*/
+
+/* #portfolio figure:hover::before{
   opacity: 1;
+} */
+#portfolio figure figcaption {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    color: white;
+    line-height: 2;
+    font-size: 20px;
 }
-#portfolio figure figcaption{
-    /*! position: absolute; */
-    /*! display: inline-block; */
-    /*! box-sizing: border-box; */
-    /*! text-align: center; */
+
+figcaption {
+    margin-top: 10px;
+    text-align: center;
+    line-height: 1.5;
 }
-img{    
+
+img {
     width: 550px;
     height: 300px;
     box-sizing: border-box;
+    display: inline-block;
+    border-radius: 20px;
 }
-dl{
-  /*! position: absolute; */
-  /*! z-index: 2; */
-  /*! display: flex; */
-        
-  /*! flex-direction: column; */
-  /*! justify-content: center; */
-  /*! align-items: center; */
-  /*! top: 0; */
-}
-dt{
-
-}
-dd{
-
-}
-
-

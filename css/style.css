@@ -1,9 +1,9 @@
-body{
+body {
     transition: all 1s;
     font-family: 'Noto Sans KR', sans-serif;
-    
 }
-.aside{
+
+.aside {
     width: 90px;
     background-color: #d3cfcf00;
     position: fixed;
@@ -15,10 +15,12 @@ body{
     top: 50px;
     color: white;
 }
-.asideShow{
-    right:0;
+
+.asideShow {
+    right: 0;
 }
-.aside a.ham{
+
+.aside a.ham {
     position: absolute;
     left: -103px;
     box-sizing: border-box;
@@ -28,33 +30,36 @@ body{
     background-repeat: no-repeat;
     font-size: 0;
 }
-.aside ul{
+
+.aside ul {
     line-height: 2;
     text-transform: capitalize;
 }
-.aside ul li{    
-}
-.aside ul li a{    
+
+.aside ul li {}
+
+.aside ul li a {
     display: block;
     color: white;
 }
-header ul.gnb{
+
+header ul.gnb {
     display: flex;
     justify-content: right;
     font-size: 20px;
     font-weight: bold;
-    gap: 80px;
-    width: 1200px;
+    gap: 100px;
     position: absolute;
-    top: 50px;
+    top: 70px;
+    right: -360px;
 }
-header ul.gnb li{
-    
-}
-header ul.gnb a{
-    
+
+header ul.gnb li {}
+
+header ul.gnb a {
     color: white;
 }
-.over{
-    color:red;
+
+.over {
+    color: red;
 }
