@@ -40,13 +40,14 @@ footer {
 
 #foot p {
   padding: 20px;
-  display: flex;
-  justify-content: center;
+  /*! display: flex; */
+  /*! justify-content: center; */
   text-align: center;
 }
 
 #foot strong {
-  font-size: 25px;
+  font-size: 23px;
+  vertical-align: -3px;
 }
 
 #foot a {
