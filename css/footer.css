@@ -11,8 +11,13 @@ footer {
 
 #foot h2 {
   padding-top: 20px;
+  display: block;
+  text-align: center;
 }
-
+#foot h2 strong{
+  font-size: 100px;
+  font-family: 'Monoton', cursive;
+}
 .thanks {
   display: flex;
   justify-content: center;
