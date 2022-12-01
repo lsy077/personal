@@ -24,7 +24,9 @@ main {
     /*! background-origin: content-box; */
 }
 
-#about .wrap0 {}
+#about .wrap0 {
+    position:relative;
+}
 
 h2 {
     display: flex;
@@ -39,8 +41,7 @@ h2 {
     perspective: 600px;
     position: relative;
 }
-#about h2 i{
-    
+#about h2 i{    
     display: block;
     width: 50px;
     height: 50px;
@@ -68,7 +69,18 @@ h2 a strong {
     font-size: 100px;
     font-family: 'Monoton', cursive;
 }
-
+#about .wrap0 img{
+    display: block;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left:580px;
+     animation-name: about;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2s;
+    display: block;
+}
 #about p {
     font-size: 20px;
     line-height: 5;
@@ -147,7 +159,7 @@ h2 a strong {
     width: 10px;
     height: 10px;
     display: block;
-    border: 2px solid #8e8e8e;
+    border: 4px solid #8e8e8e;
     border-radius: 50%;
     position: absolute;
     top: 20px;
@@ -169,6 +181,7 @@ h2 a strong {
         opacity: 0;
     }
 }
+
 #skill h2 {
     /*! margin-bottom: 150px; */
     display: block;
@@ -303,14 +316,16 @@ h2 a strong {
     font-size: 15px;
 }
 .center figcaption h3{
-    font-size: 15px;
+    font-size: 10px;
+    margin-top: 10px;
 }
 .center figcaption p{
-    font-size: 15px;
+    font-size: 10px;
 }
 .center a {
     color: red;
-    font-size: 15px;
+    font-size: 9px;
+    margin-bottom: 10px;
 }
 
 .center i {
@@ -404,7 +419,9 @@ figure:hover{
     line-height: 2;
     font-size: 20px;
 }
-
+#portfolio .center figure figcaption {
+    background-color: #000;
+}
 figcaption {
     margin-top: 10px;
     text-align: center;
