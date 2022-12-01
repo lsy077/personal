@@ -292,9 +292,11 @@ h2 a strong {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: white;   
 }
-
+.center figure img{
+     box-shadow: 0px 0px 25px #c6b5b5;
+}
 .center figcaption{
     display: flex;
     flex-direction: column;
@@ -325,7 +327,7 @@ h2 a strong {
     box-sizing: border-box;
     text-align: center;
     background-color: white;
-    line-height: 1.2;
+    line-height: 1.2;    
 }
 
 .center img {
@@ -360,7 +362,38 @@ figure {
     box-sizing: border-box;
     margin-bottom: 40px;
 }
-
+figure>div{
+    display:flex;
+    justify-content: center;
+    align-items: center;  
+    text-align: center;
+}
+figure>div::before{
+    content: "Click";
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    width: 550px;
+    height: 300px;
+    border: 1px solid #333;    
+    border-radius: 20px;
+    display: inline-block;
+    background-color:rgba(0,0,0,0.7);
+    transition: all 0.5s; 
+    position: absolute;
+    opacity: 0;
+    line-height: 6;
+}
+figure:hover >div::before{
+     opacity: 1;
+}
+.center figure:hover >div::before{
+    opacity: 0;
+}
+figure:hover{
+    border-radius: 20px;
+    box-shadow: 0px 0px 25px #c6b5b5;
+}
 #portfolio figure figcaption {
     display: flex;
     justify-content: center;
