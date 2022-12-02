@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/title.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/mobile.css">
     <!-- 구글 폰 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,50 +24,26 @@
     <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
     <script src="js/jquery-1.6.2.min.js"></script>
     <script type="text/javascript">
         var highlight = false;
         $(document).ready(
             function () {
-                $(".changecolor li:nth-child(1) a").click(
-                    function () {
-                        $("body").css("background-color", "#fff");
-                        return false;
-                    }
-                );
-                $(".changecolor li:nth-child(2) a").click(
-                    function () {
-                        $("body").css("background-color", "#333");
-                        return false;
-                    }
-                );
-
                 // aside클릭 - 슬라이드인
                 $(".aside a.ham").click(
                     function () {
                         $(".aside").toggleClass("asideShow");
                         return false;
-                    }
-                );
-
-                // 대메뉴오버
-                $(".gnb li a").hover(
-                    function () {
-                        $(this).addClass("over");
-                        $(this).parent().siblings().children().removeClass("over");
-                        // parent()는 앞요소의 부모요소를 가리킴
-                        // siblings()는 앞요소의 다른형제요소를 가르킴
-                        // children()는 앞요소의 자식요소를 가르킴
-                    }
-                );
+                    });                
                 $("#portfolio .wrap3 .contents figcaption p,figcaption a").hide();
                 $("#portfolio .wrap3 .contents figure").click(
                     function () {
-                        $(".wgraphic").remove();                       
+                        $(".wgraphic").remove();
                         $(".contents").append("<div class='wgraphic'><div class='center'></div></div>");
-                        $(this).clone().appendTo(".center").css("transform", "scale(1.5)");                     
+                        $(this).clone().appendTo(".center").css("transform", "scale(1.5)");
                         $(".center figcaption p,.center figcaption a").show();
                         $(".wgraphic").hide().fadeIn(300);
                         $(".center").append("<i class='ion-ios-close-empty'></i>");
@@ -101,13 +78,32 @@
                     }
                     highlight = !highlight;
                 });
+                // 메뉴클릭시 해당컨텐츠로 페이즈스크롤
+                var c1p = $("#about").offset().top;
+                var c2p = $("#skill").offset().top;
+                var c3p = $("#portfolio").offset().top;
+                var c4p = $("#foot").offset().top;
+                $(".c1").click(function () {
+                    $("html,body").animate({ scrollTop: c1p }, 2000);
+                    return false;
+                });
+                $(".c2").click(function () {
+                    $("html,body").animate({ scrollTop: c2p }, 2000);
+                    return false;
+                });
+                $(".c3").click(function () {
+                    $("html,body").animate({ scrollTop: c3p }, 2000);
+                    return false;
+                });
+                $(".c4").click(function () {
+                    $("html,body").animate({ scrollTop: c4p }, 2000);
+                    return false;
+                });
             });
-
     </script>
     <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
-
         .material-symbols-outlined {
             font-variation-settings:
                 'FILL' 0,
@@ -127,22 +123,18 @@
             <h1 class="logo"><a href="">이시영</a></h1>
             <nav>
                 <ul class="gnb">
-                    <li><a href="">ABOUT</a></li>
-                    <li><a href="">SKILL</a></li>
-                    <li><a href="">PORTFOLIO</a></li>
-                    <li><a href="">CONYTACT</a></li>
+                    <li class="c1"><a href="">ABOUT</a></li>
+                    <li class="c2"><a href="">SKILL</a></li>
+                    <li class="c3"><a href="">PORTFOLIO</a></li>
+                    <li class="c4"><a href="">CONYTACT</a></li>
                 </ul>
-                <!-- <ul class="changecolor">
-                    <li><a href="">day</a></li>
-                    <li><a href="">night</a></li>
-                </ul> -->
                 <div class="aside">
                     <a href="" class="ham">메뉴보기</a>
                     <ul>
-                        <li><a href="">about</a></li>
-                        <li><a href="">skill</a></li>
-                        <li><a href="">portfolio</a></li>
-                        <li><a href="">conytact</a></li>
+                        <li class="c1"><a href="">ABOUT</a></li>
+                        <li class="c2"><a href="">SKILL</a></li>
+                        <li class="c3"><a href="">PORTFOLIO</a></li>
+                        <li class="c4"><a href="">CONYTACT</a></li>
                     </ul>
                 </div>
             </nav>
@@ -158,7 +150,6 @@
             <div class="jump8">I</div>
             <div class="jump9">O</div>
         </div>
-
     </header>
     <!--  타이틀영역 -->
     <div id="title">
@@ -168,22 +159,20 @@
                     <div class="text text1">L</div>
                     <div class="text text2">E</div>
                     <div class="text text3">E</div>
-                   <div><span class="block">
-                        <div class="text text4">S</div>
-                        <div class="text text5">I</div>
-                        <div class="text text6">Y</div>
-                        <div class="text text7">O</div>
-                        <div class="text text8">U</div>
-                        <div class="text text9">N</div>
-                        <div class="text text10">G</div>
-                    </span></div>
+                    <div><span class="block">
+                            <div class="text text4">S</div>
+                            <div class="text text5">I</div>
+                            <div class="text text6">Y</div>
+                            <div class="text text7">O</div>
+                            <div class="text text8">U</div>
+                            <div class="text text9">N</div>
+                            <div class="text text10">G</div>
+                        </span></div>
                 </div>
             </div>
         </div>
         <a href="" class="scroll">scroll</a>
     </div>
-    <!--  내용영역 -->
-
     <!-- ABOUT ME -->
     <section id="about">
         <div class="wrap0">
@@ -276,7 +265,7 @@
                     </figure>
                     <figure>
                         <div>
-                        <img src="img/hyundri.PNG" alt="">
+                            <img src="img/hyundri.PNG" alt="">
                         </div>
                         <figcaption>
                             <h3>#3. 현대건설</h3>
@@ -286,7 +275,7 @@
                     </figure>
                     <figure>
                         <div>
-                        <img src="img/lunabear.up.PNG" alt="">
+                            <img src="img/lunabear.up.PNG" alt="">
                         </div>
                         <figcaption>
                             <h3>#2. 수제맥주 리뉴얼 </h3>
@@ -296,7 +285,7 @@
                     </figure>
                     <figure>
                         <div>
-                        <img src="img/lsy.PNG" alt="">
+                            <img src="img/lsy.PNG" alt="">
                         </div>
                         <figcaption>
                             <h3>#4. 개인홈페이지 </h3>

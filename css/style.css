@@ -17,12 +17,12 @@ body {
 }
 
 .asideShow {
-    right: 0;
+    right: 20px;
 }
 
 .aside a.ham {
     position: absolute;
-    left: -103px;
+    left: -60px;
     box-sizing: border-box;
     padding: 20px 20px;
     color: white;
@@ -51,7 +51,8 @@ header ul.gnb {
     gap: 100px;
     position: absolute;
     top: 70px;
-    right: -360px;
+    right: -160px;
+    z-index: 5;
 }
 
 header ul.gnb li {}

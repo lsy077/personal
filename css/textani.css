@@ -18,7 +18,7 @@
        perspective: 600px;
        /*! padding: 359px; */
        position: absolute;
-       right: 400px;
+       right: 350px;
        bottom: 300px;
      }
 
@@ -33,7 +33,7 @@
        font-size: 100px;
        animation: cube 2.7s 1.7s 1;
        justify-content: center;
-       padding-left: 347px;
+       padding-left: 357px;
        font-weight: bold;
        color: #b9b198;
      }

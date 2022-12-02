@@ -34,7 +34,7 @@ header .wrap h1 a {
   position: relative;
   position: absolute;
   font-weight: bold;
-  left: 283px;
+  left: 200px;
   top: 10px;
   transition: all 0.5s;
   animation-name: por;
