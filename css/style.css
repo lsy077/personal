@@ -29,6 +29,7 @@ body {
     background-image: url(../img/menu_open_white.png);
     background-repeat: no-repeat;
     font-size: 0;
+    background-color:red;
 }
 
 .aside ul {
