@@ -4,7 +4,9 @@ header {
   position: relative;
 }
 
-h1 {}
+h1 {
+  
+}
 
 header .wrap h1 a {
   font-size: 0;
