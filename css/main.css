@@ -156,7 +156,7 @@ h2 a strong {
     position:relative;
 }
 
-@keyframes circle{
+@keyframes dot{
     0%{
         border:2px solid green;
         background-color: green;
@@ -166,7 +166,7 @@ h2 a strong {
         background-color: #05fce4;}
 }
 #top_light::after{
-     content:"";
+    content:"";
     width: 7px;
     height: 7px;
     display: block;
@@ -177,12 +177,35 @@ h2 a strong {
     right: 38px;
     background-color: green;
     position: absolute;
-    animation-name: circle;
+    animation-name: dot;
     animation-duration: 0.5s;
-    animation-iteration-count:infinite;
- 
+    animation-iteration-count:infinite; 
 }
-
+#top_light::before{
+    content:"";
+    width: 10px;
+    height: 10px;
+    display: block;
+    border: 4px solid #8e8e8e;
+    border-radius: 50%;
+    position: absolute;
+    top: 30px;
+    right: 60px;
+    animation-name: circle;
+    animation-duration: 1s;
+    animation-iteration-count:infinite;  
+    animation-timing-function: ease-in-out; 
+}
+@keyframes circle{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        width: 80px;
+        height: 80px;
+        opacity: 0;
+    }
+}
 #skill h2 {
     /*! margin-bottom: 150px; */
     display: block;
